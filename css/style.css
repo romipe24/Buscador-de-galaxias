@@ -1,0 +1,34 @@
+main {
+    min-height: calc(100vh - 160px);
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 200px; /* Ajusta la altura para que todas las imágenes tengan el mismo tamaño */
+    object-fit: cover; /* Recorta la imagen para que ocupe todo el espacio sin distorsionarse */
+  }
+  
+  .card {
+    height: 100%; /* Asegura que todas las cards sean del mismo tamaño */
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-text {
+    max-height: 100px; /* Limita la altura de la descripción */
+    overflow-y: auto; /* Activa el scroll si la descripción es muy larga */
+  }
+  
+  .card-text::-webkit-scrollbar { /*para que se vea el scroll tambien se necesita esto */
+    width: 8px;
+  }
+  
+  .card-text::-webkit-scrollbar-thumb { /*para que se vea el scroll tambien se necesita esto */
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  
